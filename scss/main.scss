@@ -3,10 +3,11 @@
 @import "fonts";
 @import "general";
 @import "blocks/blocks";
+@import "root";
 
 /* HEADER START*/
 h1{
-  font-family:Arial, Helvetica, sans-serif
+  font-family: 'Future PT';
 }
 .site-header{
   background-color: #F9F8F8;
@@ -14,18 +15,36 @@ h1{
   &-wrapper{
     display: flex;
     align-items: center;
-    margin-left: 186px;
-
+    margin-left: 190px;
+    justify-content: space-between;
+    
+    &-text{
+      color: #333;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    
     &-text::before{
       content: url("../assets/icons/home-icon.svg");
       padding-right: 9px;
     }
     
+    &-text:hover{
+      color: #FFBD54;
+      transition: 0.2s;
+    }
+    &-text:active{
+      opacity: 0.6;
+    }
+    
+    
+    
     &-list{
       display: flex;
-      
       &-item1{
-        padding-right: 9px;
+        padding-right: 18px;
       }
       
       &-item1::before{
@@ -39,6 +58,17 @@ h1{
       }
       
       &-item:not(:last-child){
+        margin-right: 9px;
+      }
+      
+      &-item::before{
+        content: url("../assets/icons/point-icon.svg");
+        position: relative;
+        right: 9px;
+        bottom: 3px;
+      }
+      
+      &-item:not(:last-child){
         padding-right: 9px;
       }
       
@@ -46,10 +76,65 @@ h1{
         margin-right: 17px;
       }
       
+      &-link{
+        color: #333;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      
+      &-link:hover{
+        color: #FFBD54;
+        transition: 0.2s;
+      }
+      
+      &-link:active{
+        opacity: 0.6;
+      }
+      
     }
     
-    &-list2{
+    &-clock::before{
+      content: url("../assets/icons/kalendar-icon.svg");
+      position: relative;
+      top: 3px;
+    }
+    
+    &-clock{
+      color: #333;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
       display: flex;
+      align-items: center;
+      
+      &-time{
+        margin-left: 7px;
+      }
+      
+      &-time2{
+        padding-left: 17px;
+      }
+    }
+    
+    .hover-clock:hover{
+      color: #FFBD54;
+      transition: 0.2s;
+    }
+    
+    .hover-clock:active{
+      opacity: 0.6;
+    }
+    
+    .hover-clock2:active{
+      opacity: 0.6;
+    }
+    
+    .hover-clock2:hover{
+      color: #FFBD54;
+      transition: 0.2s;
     }
   }
 }
@@ -57,4 +142,6 @@ h1{
 .point{
   padding-right: 9px;
 }
+
+
 /* HEADER END*/
