@@ -512,4 +512,90 @@ h1 {
   padding-right: 9px;
 }
 
-/* HEADER END*//*# sourceMappingURL=main.css.map */
+/* HEADER END*/
+/* NAV START */
+.nav-section-logo {
+  position: relative;
+  top: -7px;
+  width: 177px;
+  height: 86px;
+}
+.nav-section-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.site-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.site-nav-list {
+  display: flex;
+  align-items: center;
+  padding-left: 126px;
+  padding-right: 155px;
+}
+.site-nav-list-link1 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  top: -3px;
+}
+.site-nav-list-link1::before {
+  content: url("../assets/icons/nav-fish.svg");
+  position: relative;
+  top: 6px;
+  right: 12px;
+}
+.site-nav-list-link2 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.site-nav-list-link2 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.site-nav-list-link2 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.site-nav-list-link2 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.site-nav-list-link2 {
+  color: #333;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.site-nav-list-item:not(:last-child) {
+  padding-right: 58px;
+}
+.site-nav-text {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.site-nav-text::before {
+  content: url("../assets/icons/nav-paw.svg");
+}
+
+/* NAV END *//*# sourceMappingURL=main.css.map */
